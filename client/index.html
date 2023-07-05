@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Web Component Test</title>
+    <style>
+      body {
+        font-family: "Helvetica", sans-serif;
+        color: rgb(68, 68, 68);
+        background-color: rgb(250, 250, 250);
+      }
+
+      .container {
+        display: flex;
+        justify-content: space-around;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Web Component Test</h1>
+      <section class="container">
+        <x-table id="table"></x-table>
+        <x-detail id="detail"></x-detail>
+      </section>
+    </main>
+
+    <script type="module" src="/js/main.js"></script>
+  </body>
+</html>

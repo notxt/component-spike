@@ -1,0 +1,23 @@
+{
+  "folders": [
+    {
+      "name": "server",
+      "path": "./server"
+    },
+    {
+      "name": "client",
+      "path": "./client"
+    },
+    {
+      "name": "project",
+      "path": "."
+    },
+  ],
+  "settings": {
+    "editor.formatOnSave": true,
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1000,
+    "files.insertFinalNewline": true,
+    "cSpell.words": [],
+  }
+}
