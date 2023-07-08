@@ -2,25 +2,63 @@
 
 <html>
   <head>
-    <title>Web Component Test</title>
+    <title>Web Component Spike</title>
     <style>
       body {
-        font-family: "Helvetica", sans-serif;
-        color: rgb(68, 68, 68);
         background-color: rgb(250, 250, 250);
+        color: rgb(68, 68, 68);
+        font-family: "Helvetica", sans-serif;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 10px;
       }
 
-      .container {
+      header {
+        border-style: solid;
+        border-width: 1px;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
+        padding: 20px;
+      }
+
+      h1 {
+        margin: 0px;
+      }
+
+      main {
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+      }
+
+      main > section {
+        border-style: solid;
+        border-width: 1px;
+        margin-right: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+      }
+
+      main > section:last-child {
+        margin-right: 0px;
+        width: auto;
       }
     </style>
   </head>
   <body>
+    <header>
+      <section><h1>Web Component Spike</h1></section>
+      <section>
+        <x-menu id="menu"></x-menu>
+      </section>
+    </header>
+
     <main>
-      <h1>Web Component Test</h1>
-      <section class="container">
+      <section>
         <x-table id="table"></x-table>
+      </section>
+      <section>
         <x-detail id="detail"></x-detail>
       </section>
     </main>

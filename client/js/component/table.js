@@ -1,6 +1,23 @@
 const template = document.createElement("template");
 template.innerHTML = `
 <style>
+form {
+  margin-bottom: 20px;
+}
+
+form > input[type=text] {
+  border-style: none;
+  background-color: transparent;
+}
+
+form > input[type=text]::placeholder {
+  color: rgb(68, 68, 68);
+}
+
+{
+  border-style: none;
+}
+
 thead tr {
   font-weight: bold
 }
@@ -12,8 +29,8 @@ tbody tr {
 }
 </style>
 <form>
-  <input id="filter" type="text" placeholder="filter"></input>
-<form>
+  <input id="filter" type="text" placeholder="search"></input>
+</form>
 <table></table>
 `;
 
