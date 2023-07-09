@@ -50,8 +50,6 @@ export class XTable extends HTMLElement {
     this.#table = this.shadowRoot.querySelector("table");
     this.#filter = this.shadowRoot.getElementById("filter");
 
-    console.log(this.#filter);
-
     this.#filter.addEventListener("input", (event) => {
       event.preventDefault();
       this.#filterStr = event.target.value;

@@ -4,7 +4,7 @@ template.innerHTML = `
 <style>
 button {
     background-color: transparent;
-    border-width: 1px;
+    border-style: none;
     color: rgb(68, 68, 68);
     font-family: "Helvetica", sans-serif;
 }
@@ -37,13 +37,13 @@ export class XMenu extends HTMLElement {
   }
 
   #open(e) {
-    console.log("open", document.activeElement, e);
+    console.log("open", document.activeElement);
 
     this.#menu.style.display = "block";
   }
 
   close(e) {
-    console.log("close", document.activeElement, e);
+    console.log("close", document.activeElement);
 
     this.#menu.style.display = "none";
   }
