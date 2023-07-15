@@ -1,6 +1,8 @@
 const count = 10000;
 const list = [];
 
+let currentId = 0;
+
 for (let id = 1; id <= count; id++) {
   const item = {
     id,
